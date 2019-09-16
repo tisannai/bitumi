@@ -54,7 +54,7 @@ bp_t bp_use( st_u64_t bits, st_t mem, st_u64_t byte_size )
     ret = mem;
     ret->size = bits;
 
-    st_clr( ret->bits, byte_size );
+    st_memclr( ret->bits, byte_size );
 
     return ret;
 }
